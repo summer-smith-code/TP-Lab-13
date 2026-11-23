@@ -8,13 +8,15 @@ using UnityEngine.Networking;
 
 public class WeatherManager : MonoBehaviour
 {
+    public Light sun;
+
     public enum City
     {
         Orlando,
-        Sydney,
-        London,
+        Shanghai,
+        Melbourne,
         Moscow,
-        Stockholm
+        Honolulu
     }
 
     [SerializeField] public City city;
@@ -47,6 +49,7 @@ public class WeatherManager : MonoBehaviour
     void Start()
     {
         InitializeDictionary();
+        sun = GetComponent<Light>();
 
         xmlApi = "http://api.openweathermap.org/data/2.5/weather?q=" + city + ",us&mode=xml&appid=3deb980fa62762c977d52625281e64ce";
         StartCoroutine(GetWeatherXML(OnXMLDataLoaded));
@@ -85,6 +88,16 @@ public class WeatherManager : MonoBehaviour
 
         if (skyboxDict.TryGetValue(weatherIconID, out Material skybox)) ChangeSkybox(skybox);
         else Debug.LogWarning($"Key '{weatherIconID}' not found in skybox dictionary.");
+        if (weatherIconID.Contains("d"))
+        {
+            sun.intensity = 1.0f;
+            sun.color = new Color(1.0f, 0.956f, 0.839f); // warm sunlight color
+        }
+        else
+        {
+            sun.intensity = 0.2f;
+            sun.color = new Color(0.5f, 0.5f, 1.0f); // cool moonlight color
+        }
     }
 
     public IEnumerator GetWeatherXML(Action<string> callback)
