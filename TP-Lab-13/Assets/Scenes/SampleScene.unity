@@ -390,6 +390,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101f8268ffe3e14aa9071945a145986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  city: 0
+  skyboxes:
+  - {fileID: 2100000, guid: 0d5771081eb9abb43b1792b52260d914, type: 2}
+  - {fileID: 2100000, guid: 6eecb3bb77b3f7a43a504fceda3b0b5f, type: 2}
+  - {fileID: 2100000, guid: 9ca22510633fbfd4399f1704cd9d5c72, type: 2}
+  - {fileID: 2100000, guid: d1fdb8e44b28da34d9e922cca0bc740e, type: 2}
+  - {fileID: 2100000, guid: 0f1401d983cde1c49a7f687a57e62c5a, type: 2}
+  - {fileID: 2100000, guid: 20cbde986f628bb41bbc92dfd61311cf, type: 2}
+  - {fileID: 2100000, guid: 0f1401d983cde1c49a7f687a57e62c5a, type: 2}
+  - {fileID: 2100000, guid: 20cbde986f628bb41bbc92dfd61311cf, type: 2}
+  - {fileID: 2100000, guid: e0a21ebc98cee4e46bbae873ec0be703, type: 2}
+  - {fileID: 2100000, guid: 8426cf3d3939a7d419671f3d5c269c0b, type: 2}
+  - {fileID: 2100000, guid: e0a21ebc98cee4e46bbae873ec0be703, type: 2}
+  - {fileID: 2100000, guid: 8426cf3d3939a7d419671f3d5c269c0b, type: 2}
+  - {fileID: 2100000, guid: e0a21ebc98cee4e46bbae873ec0be703, type: 2}
+  - {fileID: 2100000, guid: 8426cf3d3939a7d419671f3d5c269c0b, type: 2}
+  - {fileID: 2100000, guid: 24d76106ebc1bd947a3fed862f899b82, type: 2}
+  - {fileID: 2100000, guid: 7b0f2096b49ccfb4f8b47c8084d650fa, type: 2}
+  - {fileID: 2100000, guid: b5a27fa4b11bfb24cbc6daff3802c229, type: 2}
+  - {fileID: 2100000, guid: 7a8675eb396637d43b4ba0a69cc715a5, type: 2}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
